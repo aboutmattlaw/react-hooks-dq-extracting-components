@@ -5,12 +5,12 @@ import Contact from "./Contact"
 
 
 
-function Nav () {
+function Nav ({name}) {
     return (
     <nav>
     <h2>Contacts</h2>
     <ul className="contacts">
-{contacts.map(c => <Contact name={c.name} key={c.id}/>)}
+{name.map(c => <Contact name={c.name} key={c.id}/>)}
     </ul>
   </nav>
     )
